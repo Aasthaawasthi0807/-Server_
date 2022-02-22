@@ -91,7 +91,7 @@
             <br>            
             <h5 style="color:purple">Login into your account</h5>
             <form class="form-signin" method="post" action="/login">
-                {% csrf_token %}
+             <!--{% csrf_token %}-->
               <div class = "form-row">
                 <div class = "col-lg-7">
                   <input type ="text" name = "username" placeholder = "Username" class ="form-control p-3">
@@ -108,7 +108,7 @@
                 </div>
               </div>
               <!--<a href="#">Forgot Password</a>-->
-              <p ><b > New here?</b> <a href="/signup.html" > Register now </a></p>
+              <p ><b > New here?</b> <a href="signup.html" > Register now </a></p>
               
 
             </form>
