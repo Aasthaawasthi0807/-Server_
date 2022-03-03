@@ -49,12 +49,15 @@
     </style> 
   </head>
   <body>
+
+    
     {% for message in messages %}
     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
       <strong>Message: </strong> {{ message }}
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endfor %}
+
 
     {% block body %}
     {% endblock body %}
@@ -91,13 +94,16 @@
           </div>
           <div class = "col-lg-7 px-5 pt-5">
             <!--<img src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/4b932533-f39d-4037-a4eb-6ace79f652e3.png" class="logo" width="25%" height="15%">-->
-            <br>
-            <br>
-            <br>
+            
+            
             <div class ="container">      
             <h5 style="color:purple">Register a new account</h5>
             <form class="form-signin" method="post" action="Register">
               {% csrf_token %}
+                <label><b> Username: </b></label>
+                <br>
+                <input type = "text" name="Username" id="Username" placeholder=" Enter Yor Last Name" Required>
+                <br><br>
                 <label><b> First Name: </b></label>
                 <br>
                 <input type = "text" name="fname" id="fname" placeholder=" Enter Yor First Name" Required>
@@ -124,7 +130,7 @@
                 <input type="number" name ="phone number" id="phone number" placeholder=" Enter Your Phone Number">
                 <br><br>
               
-                <button type="submit" value="Submit" name="submit" id="submit"class="btn btn-success"><a href="/login" style="color:white">Register</a></button>
+                <button type="submit" value="Submit" name="submit" id="submit"class="btn btn-success"><a href="#" style="color:white">Register</a></button>
                 <p> <b> Already have an account?</b><a href="/login" > Login now </a></p>
             
             </form>

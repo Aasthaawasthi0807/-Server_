@@ -23,6 +23,7 @@ admin.site.site_header = "Leads Management Platform"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('authentication.urls'))
+    
 ]
 
 #if settings.DEBUG:
