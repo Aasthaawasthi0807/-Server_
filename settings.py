@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 
 STATICFILES_DIR ={
-    os.path.join(BASE_DIR,"static")
+    os.path.join(BASE_DIR,"static"),
 }
 
 
@@ -149,7 +149,7 @@ MESSAGE_TAGS = {
 
 
 
-
-"""JAZZMIN_SETTINGS = {
-     "site_logo": "logo.png",
-}"""
+JAZZMIN_SETTINGS = {
+    #"site_logo": ,
+     
+}
