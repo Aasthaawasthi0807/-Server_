@@ -149,7 +149,5 @@ MESSAGE_TAGS = {
 
 
 
-JAZZMIN_SETTINGS = {
-    #"site_logo": ,
-     
-}
+MEDIA_URL = '/images/'
+MEDIA_ROOT = BASE_DIR / 'static'
